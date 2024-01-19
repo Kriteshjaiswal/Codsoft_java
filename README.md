@@ -51,7 +51,7 @@ public class Main{
 }
 
 
-#2- Project Java
+# 2- Project Java
 # Student Check Grades
 
 import java.util.Scanner;
@@ -96,3 +96,51 @@ public class Main {
     }
 
 }
+
+# 3-Project Java
+# Currency Convertor
+
+import java.util.Scanner;
+
+     public class Main{
+              public static void main(String[] args){
+              Scanner sc = new Scanner(System.in);
+              System.out.println("Enter the country code \n Indian rupees: 1 \n Us Dollar: 2 \n British Pound: 3 \n Kuwaiti Dinar: 4" );
+              int code = sc.nextInt();
+              double amount ;
+
+             if(code == 1 ){
+                 System.out.println("Enter amount in Indian rupees");
+                 amount = sc.nextDouble();
+                 System.out.println("US Dollar: " + amount * 0.0120251584 );
+                 System.out.println("British Pound: " +  amount * 0.0094919);
+                 System.out.println("Kuwaiti Dinar: " + amount * 0.0037033 );
+             }
+             else if(code == 2 ){
+                 System.out.println("Enter amount in US Dollar");
+                 amount = sc.nextDouble();
+                 System.out.println("Indian Rupees: " + amount * 83.158988 );
+                 System.out.println("British Pound: " +  amount * 0.788848 );
+                 System.out.println("Kuwaiti Dinar: " + amount * 0.307875 );
+             }
+             else if(code == 3 ){
+                 System.out.println("Enter amount in British Pound");
+                 amount = sc.nextDouble();
+                 System.out.println("Indian Rupees: " + amount * 105.427);
+                 System.out.println("US Dollar: " +  amount * 1.26814);
+                 System.out.println("Kuwaiti Dinar: " + amount * 0.390428);
+             }
+             else if(code == 4 ){
+                 System.out.println("Enter amount in Kuwaiti Dinar");
+                 amount = sc.nextDouble();
+                 System.out.println("Indian Rupees: " + amount * 270.025);
+                 System.out.println("US Dollar: " +  amount * 3.24805);
+                 System.out.println("British Pound: " + amount *2.56003 );
+             }
+             else{
+                 System.out.println("Invalid Code ");
+             }
+         }
+     }
+    }
+
