@@ -49,3 +49,50 @@ public class Main{
         }
     }
 }
+
+
+#2- Project Java
+# Student Check Grades
+
+import java.util.Scanner;
+
+/**
+ * student_grades
+ */
+public class Main {
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter student numbers ");
+        System.out.println("Math ");
+        int math = sc.nextInt();
+        System.out.println("Physics ");
+        int phy = sc.nextInt();
+        System.out.println("Chemistry");
+        int chem = sc.nextInt();
+        System.out.println("English " );
+        int Eng = sc.nextInt();
+        System.out.println("Hindi");
+        int hin = sc.nextInt();
+
+        float total = math + phy + chem+ Eng + hin;
+
+        System.out.println("Student total number: " + total);
+
+        float per = total / 5;
+        
+        System.out.println("Student percentage: " + per + "%");
+
+        if(per <= 45){
+            System.out.println("Third division");
+        }
+        else if(per < 60  && per > 45 ){
+            System.out.println("Second Division");
+        }
+        else {
+            System.out.println("Fisrt division");
+        }
+    }
+
+}
